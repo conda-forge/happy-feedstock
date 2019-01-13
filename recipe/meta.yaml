@@ -16,7 +16,7 @@ requirements:
   host:
     - zlib
     - gmp
-    - ghc
+    - ghc-bootstrap
     - cabal
 
 test:
