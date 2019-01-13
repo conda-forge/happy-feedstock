@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not linux]
 
 requirements:
@@ -16,7 +16,7 @@ requirements:
   host:
     - zlib
     - gmp
-    - ghc
+    - ghc-bootstrap
     - cabal
 
 test:
