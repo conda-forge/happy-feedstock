@@ -3,7 +3,8 @@ export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
 export LIBRARY_PATH="$PREFIX/lib:$LIBRARY_PATH"
 export C_INCLUDE_PATH="$PREFIX/include:$C_INCLUDE_PATH"
 export CABAL_DIR="$PREFIX"
-export LDFLAGS=" -lgmp $LDFLAGS $LDFLAGS"
+export LDFLAGS=" -lgmp $LDFLAGS "
+export LD="x86_64-conda_cos6-linux-gnu-ld"
 ghc-pkg recache
 ghc-pkg describe rts
 ghc-pkg describe rts > rts.pkg
